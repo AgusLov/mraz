@@ -26,7 +26,7 @@ def main():
     id_pedido = input("Colocar ID del pedido:\n")
     cantidad = input("Cual es la cantidad:\n")
 
-    pedido = Pedido(id_cliente, id_pedido, cantidad, None, 'Started')
+    pedido = Pedido(id_cliente, id_pedido, cantidad, proceso, 'Started')
 
     print("Select a stage:")
     print("1. Started")
