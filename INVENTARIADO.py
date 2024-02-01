@@ -23,8 +23,9 @@ class EmpresaMetalurgica:
             print("No se han realizado ingresos de materiales.")
 
     def main(self):
-        producto = input("Ingrese el producto a consultar (GALVANIZADA, NEGRA, ACERO INOXIDABLE): ").upper()
-        self.consultar_producto(producto)
+        while True:
+            producto = input("Ingrese el producto a consultar (GALVANIZADA, NEGRA, ACERO INOXIDABLE): ").upper()
+            self.consultar_producto(producto)
 
 if __name__ == "__main__":
     empresa = EmpresaMetalurgica()
