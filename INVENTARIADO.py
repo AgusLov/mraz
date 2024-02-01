@@ -19,12 +19,11 @@ class EmpresaMetalurgica:
             cantidad = int(input("Ingrese la cantidad a agregar: "))
             self.inventario[producto] += cantidad
             print(f"Se han agregado {cantidad} unidades de {producto} al inventario.")
-        elif ingreso_material == "N":
-            print("No se han realizado ingresos de materiales.")
 
     def main(self):
         producto = input("Ingrese el producto a consultar (GALVANIZADA, NEGRA, ACERO INOXIDABLE): ").upper()
         self.consultar_producto(producto)
+        print(f"La cantidad actual de unidades del producto {producto} es: {self.inventario[producto]}")
 
 if __name__ == "__main__":
     empresa = EmpresaMetalurgica()
