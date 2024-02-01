@@ -1,5 +1,5 @@
 class EmpresaMetalurgica:
-    def __init__(self
+    def __init__(self):
         self.inventario = {
             "GALVANIZADA": 0,
             "NEGRA": 0,
